@@ -134,3 +134,50 @@ button:hover {
 .hidden {
   display: none;
 }
+.timer-display {
+  margin: 28px 0;
+
+  color: #123b4a;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.button-group button {
+  flex: 1;
+}
+
+.secondary-button {
+  color: #123b4a;
+  background: #dff1ee;
+}
+
+.secondary-button:hover {
+  color: white;
+  background: #5c7377;
+}
+
+.break-guide {
+  padding: 16px;
+
+  color: #123b4a;
+  background: #dff3f0;
+
+  border-radius: 12px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#timerStatus {
+  color: #5c7377;
+  text-align: center;
+}
