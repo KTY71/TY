@@ -2,10 +2,12 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
+
   <title>EyeRest</title>
 
   style.css
@@ -21,14 +23,12 @@
     <section class="card">
       <h2>오늘의 눈 상태 확인</h2>
 
-      <p class="description">
-        현재 느끼는 불편 정도를 선택해 주세요.
-      </p>
-
       <div class="question">
         <label for="fatigue">
           눈의 피로도
-          <span id="fatigueValue">0</span>점
+          <span>
+            <strong id="fatigueValue">0</strong>점
+          </span>
         </label>
 
         <input
@@ -43,7 +43,9 @@
       <div class="question">
         <label for="dryness">
           건조감
-          <span id="drynessValue">0</span>점
+          <span>
+            <strong id="drynessValue">0</strong>점
+          </span>
         </label>
 
         <input
@@ -58,7 +60,9 @@
       <div class="question">
         <label for="blur">
           흐릿하게 보이는 느낌
-          <span id="blurValue">0</span>점
+          <span>
+            <strong id="blurValue">0</strong>점
+          </span>
         </label>
 
         <input
@@ -73,7 +77,9 @@
       <div class="question">
         <label for="discomfort">
           눈 주변 불편감
-          <span id="discomfortValue">0</span>점
+          <span>
+            <strong id="discomfortValue">0</strong>점
+          </span>
         </label>
 
         <input
@@ -85,12 +91,12 @@
         >
       </div>
 
-      <button id="checkButton">
+      <button type="button" id="checkButton">
         눈 상태 확인하기
       </button>
     </section>
 
-    <section id="resultCard" class="card result-card hidden">
+    <section id="resultCard" class="card hidden">
       <h2>확인 결과</h2>
 
       <div id="statusBadge" class="status-badge">
@@ -103,12 +109,6 @@
       </p>
 
       <p id="resultMessage"></p>
-
-      <p class="medical-notice">
-        본 결과는 질환을 진단하거나 치료하기 위한 정보가
-        아닙니다. 불편감이 지속되거나 심한 증상이 있는 경우
-        의료 전문가와 상담하시기 바랍니다.
-      </p>
     </section>
   </main>
 
